@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Visita Zoo</string>
+    <string name="ventas_de_entradas_del_zoo">Ventas de entradas del Zoo</string>
+    <string name="entradas_disponibles">Entradas disponibles</string>
+    <string name="cantidad_disponible">0</string>
+    <string name="cantidad_de_entradas">Cantidad de Entradas Solicitadas</string>
+    <string name="imagen_zoo">imagen zoo</string>
+    <string name="d_a_de_la_semana_de_la_visita">Día de la semana de la visita</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="tipo_de_entrada">Tipo de Entrada</string>
+    <string name="calcular_precio_entrada">Comprar</string>
+    <string name="precio">Precio Base:</string>
+    <string name="precio_base">0.0</string>
+    <string name="descuento_grupal">Descuento grupal</string>
+    <string name="iva">IVA</string>
+    <string name="total">Total</string>
+    <string name="descuento_dia">Descuento día espectador</string>
+</resources>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondoazul"
+    tools:context=".VentaEntrada2Activity">
+
+    <TextView
+        android:id="@+id/txt_titulo_descuento_grupal3"
+        android:layout_width="197dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/descuento_grupal"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_titulo_descuento_dia" />
+
+    <TextView
+        android:id="@+id/txt_iva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginLeft="108dp"
+        android:background="@color/white"
+        android:text="@string/precio_base"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/txt_titulo_iva"
+        app:layout_constraintTop_toTopOf="@+id/txt_titulo_iva" />
+
+    <TextView
+        android:id="@+id/txt_titulo_Total"
+        android:layout_width="197dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/total"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_titulo_iva" />
+
+    <TextView
+        android:id="@+id/txt_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:text="@string/precio_base"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_titulo_Total"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.654"
+        app:layout_constraintStart_toEndOf="@+id/txt_titulo_Total"
+        app:layout_constraintTop_toTopOf="@+id/txt_titulo_Total"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txt_titulo_iva"
+        android:layout_width="197dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="26dp"
+        android:text="@string/iva"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_titulo_descuento_grupal3" />
+
+    <TextView
+        android:id="@+id/txt_descuento_grupal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="108dp"
+        android:layout_marginLeft="108dp"
+        android:background="@color/white"
+        android:text="@string/precio_base"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/txt_titulo_descuento_grupal3"
+        app:layout_constraintTop_toTopOf="@+id/txt_titulo_descuento_grupal3" />
+
+    <TextView
+        android:id="@+id/txt_descuento_dia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        android:text="@string/precio_base"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.173"
+        app:layout_constraintStart_toEndOf="@+id/txt_titulo_descuento_dia"
+        app:layout_constraintTop_toTopOf="@+id/txt_titulo_descuento_dia" />
+
+    <TextView
+        android:id="@+id/txt_titulo_descuento_dia"
+        android:layout_width="293dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/descuento_dia"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_titulo_precio_base"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txt_titulo_precio_base"
+        app:layout_constraintTop_toBottomOf="@+id/txt_titulo_precio_base" />
+
+    <Button
+        android:id="@+id/bt_calcular_precio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:onClick="comprar"
+        android:text="@string/calcular_precio_entrada"
+        app:layout_constraintEnd_toEndOf="@+id/edt_tipo_entrada"
+        app:layout_constraintStart_toStartOf="@+id/edt_tipo_entrada"
+        app:layout_constraintTop_toBottomOf="@+id/edt_tipo_entrada" />
+
+    <TextView
+        android:id="@+id/txt_titulo_venta2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="@string/ventas_de_entradas_del_zoo"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_tipo_entrada"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:autofillHints=""
+        android:background="@color/white"
+        android:ems="10"
+        android:hint="@string/tipo_de_entrada"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_titulo_venta2" />
+
+    <TextView
+        android:id="@+id/txt_titulo_precio_base"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/precio"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_calcular_precio" />
+
+    <TextView
+        android:id="@+id/txt_precio_base"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:layout_marginLeft="172dp"
+        android:background="@color/white"
+        android:text="@string/precio_base"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_titulo_precio_base"
+        app:layout_constraintStart_toEndOf="@+id/txt_titulo_precio_base"
+        app:layout_constraintTop_toTopOf="@+id/txt_titulo_precio_base"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
